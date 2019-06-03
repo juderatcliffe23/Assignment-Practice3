@@ -16,5 +16,21 @@ namespace Assignment_Practice3
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Calculate the area of a rectangle
+            try
+            {
+            double width, height, area;
+            width = Convert.ToDouble(textBox1.Text);
+            height= Convert.ToDouble(textBox2.Text);
+            area = width * height;
+            label3.Text = "Area = " + area;
+        }
+            catch
+            {
+                MessageBox.Show("use two numbers like a sum");
+            }
     }
 }
